@@ -15,6 +15,9 @@
 		3A86C1C422CC8EA300748CE2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A86C1C322CC8EA300748CE2 /* main.m */; };
 		3A86C1CE22CC8EA300748CE2 /* ZYAlertViewControllerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A86C1CD22CC8EA300748CE2 /* ZYAlertViewControllerTests.m */; };
 		3A86C1D922CC8EA300748CE2 /* ZYAlertViewControllerUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A86C1D822CC8EA300748CE2 /* ZYAlertViewControllerUITests.m */; };
+		3A86C1EA22CC8F4F00748CE2 /* ZYAlertViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A86C1E822CC8F4F00748CE2 /* ZYAlertViewController.m */; };
+		3A86C1ED22CC8F5E00748CE2 /* ZYShareView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A86C1EB22CC8F5E00748CE2 /* ZYShareView.m */; };
+		3A86C1F022CC8F6400748CE2 /* ShareViewCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A86C1EE22CC8F6400748CE2 /* ShareViewCollectionViewCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +54,13 @@
 		3A86C1D422CC8EA300748CE2 /* ZYAlertViewControllerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZYAlertViewControllerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3A86C1D822CC8EA300748CE2 /* ZYAlertViewControllerUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZYAlertViewControllerUITests.m; sourceTree = "<group>"; };
 		3A86C1DA22CC8EA300748CE2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3A86C1E822CC8F4F00748CE2 /* ZYAlertViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZYAlertViewController.m; sourceTree = "<group>"; };
+		3A86C1E922CC8F4F00748CE2 /* ZYAlertViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZYAlertViewController.h; sourceTree = "<group>"; };
+		3A86C1EB22CC8F5E00748CE2 /* ZYShareView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZYShareView.m; sourceTree = "<group>"; };
+		3A86C1EC22CC8F5E00748CE2 /* ZYShareView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZYShareView.h; sourceTree = "<group>"; };
+		3A86C1EE22CC8F6400748CE2 /* ShareViewCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShareViewCollectionViewCell.m; sourceTree = "<group>"; };
+		3A86C1EF22CC8F6400748CE2 /* ShareViewCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShareViewCollectionViewCell.h; sourceTree = "<group>"; };
+		3A86C1F122CC90A500748CE2 /* MacroDefinitionHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MacroDefinitionHeader.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,8 +111,11 @@
 		3A86C1B322CC8EA200748CE2 /* ZYAlertViewController */ = {
 			isa = PBXGroup;
 			children = (
+				3A86C1E722CC8ED600748CE2 /* View */,
+				3A86C1E622CC8EC700748CE2 /* Tool */,
 				3A86C1B422CC8EA200748CE2 /* AppDelegate.h */,
 				3A86C1B522CC8EA200748CE2 /* AppDelegate.m */,
+				3A86C1F122CC90A500748CE2 /* MacroDefinitionHeader.h */,
 				3A86C1B722CC8EA200748CE2 /* ViewController.h */,
 				3A86C1B822CC8EA200748CE2 /* ViewController.m */,
 				3A86C1BA22CC8EA200748CE2 /* Main.storyboard */,
@@ -130,6 +143,26 @@
 				3A86C1DA22CC8EA300748CE2 /* Info.plist */,
 			);
 			path = ZYAlertViewControllerUITests;
+			sourceTree = "<group>";
+		};
+		3A86C1E622CC8EC700748CE2 /* Tool */ = {
+			isa = PBXGroup;
+			children = (
+				3A86C1E922CC8F4F00748CE2 /* ZYAlertViewController.h */,
+				3A86C1E822CC8F4F00748CE2 /* ZYAlertViewController.m */,
+			);
+			path = Tool;
+			sourceTree = "<group>";
+		};
+		3A86C1E722CC8ED600748CE2 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				3A86C1EF22CC8F6400748CE2 /* ShareViewCollectionViewCell.h */,
+				3A86C1EE22CC8F6400748CE2 /* ShareViewCollectionViewCell.m */,
+				3A86C1EC22CC8F5E00748CE2 /* ZYShareView.h */,
+				3A86C1EB22CC8F5E00748CE2 /* ZYShareView.m */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -262,7 +295,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3A86C1EA22CC8F4F00748CE2 /* ZYAlertViewController.m in Sources */,
 				3A86C1B922CC8EA200748CE2 /* ViewController.m in Sources */,
+				3A86C1ED22CC8F5E00748CE2 /* ZYShareView.m in Sources */,
+				3A86C1F022CC8F6400748CE2 /* ShareViewCollectionViewCell.m in Sources */,
 				3A86C1C422CC8EA300748CE2 /* main.m in Sources */,
 				3A86C1B622CC8EA200748CE2 /* AppDelegate.m in Sources */,
 			);
@@ -437,6 +473,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 59PWKU86HT;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/ZYAlertViewController/MacroDefinitionHeader.h";
 				INFOPLIST_FILE = ZYAlertViewController/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -454,6 +491,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 59PWKU86HT;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/ZYAlertViewController/MacroDefinitionHeader.h";
 				INFOPLIST_FILE = ZYAlertViewController/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
